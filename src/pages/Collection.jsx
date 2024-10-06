@@ -138,7 +138,7 @@ const Collection = () => {
       </div>
 
       <div className='flex-1'>
-        <div className='flex justify-between gap-5 sm:gap-0 text-xl sm:text-3xl my-6'>
+        <div className='flex justify-between text-xl sm:text-3xl my-6'>
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
           <select onChange={(e)=>setSortType(e.target.value)} className='max-sm:h-8 border-2 border-gray-300 text-base px-2'>
             <option value="relavent">Sort by: Relevant</option>
