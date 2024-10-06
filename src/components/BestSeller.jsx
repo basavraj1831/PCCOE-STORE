@@ -15,7 +15,7 @@ const BestSeller = () => {
 
   return (
     <div className='my-10'>
-        <div className='text-center text-3xl py-8'>
+        <div className='text-center text-xl  sm:text-3xl py-8'>
             <Title text1={'BEST'} text2={'SELLERS'}/>
             <p className='w-3/4 m-auto text-gray-600 text-sm md:text-base'>
             The best sellers include top-rated computers, laptops, and accessories that offer exceptional performance.
