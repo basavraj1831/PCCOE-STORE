@@ -8,7 +8,7 @@ const CartTotal = () => {
 
   return (
     <div className='w-full'>
-      <div className='text-3xl'>
+      <div className='text-xl sm:text-3xl'>
         <Title text1={'CART'} text2={'TOTAL'}/>
       </div>
       <div className='flex flex-col gap-2 mt-2 text-lg'>
