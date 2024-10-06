@@ -68,9 +68,9 @@ const Orders = () => {
 
   return (
     <div className="border-t pt-16 ">
-      <div className="text-3xl flex items-center justify-between">
+      <div className="text-xl sm:text-3xl flex items-center justify-between">
         <Title text1={"MY"} text2={"ORDERS"} />
-        <h2 className="text-xl font-semibold flex items-center">
+        <h2 className="text-base sm:text-xl font-semibold flex items-center">
         Total Order Amount:&nbsp;&nbsp;<span>{totalOrderAmount}</span>{currency}
       </h2>
       </div>  
