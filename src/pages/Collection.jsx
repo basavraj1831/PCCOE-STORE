@@ -7,7 +7,6 @@ import ProductItem from '../components/ProductItem';
 const Collection = () => {
   const { products, search, showSearch } = useContext(ShopContext);
 
-  const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [subCategory, setSubCategory] = useState([]);
@@ -98,9 +97,9 @@ const Collection = () => {
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
       <div className='min-w-60'>
-        <p onClick={() => setShowFilter(!showFilter)} className='my-2 text-2xl flex items-center cursor-pointer gap-2'>
+        <p className='my-2 text-2xl flex items-center gap-2'>
           FILTERS
-          <img src={assets.dropdown_icon} className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} />
+          <img src={assets.dropdown_icon} className='h-3 sm:hidden'/>
         </p>
         <div className='border border-gray-300 pl-5 py-3 mt-6 sm:block'>
           <p className='mb-3 text-lg font-medium'>DEPARTMENT</p>
@@ -119,7 +118,7 @@ const Collection = () => {
           </div>
         </div>
         {availableSubCategories.length > 0 && (
-          <div className={`border border-gray-300 pl-5 py-3 my-6 sm:block`}>
+          <div className={`border border-gray-300 pl-5 py-3 mt-6 sm:block`}>
             <p className='mb-3 text-lg font-medium'>PRODUCTS</p>
             <div className='flex flex-col gap-2 text-lg font-light text-gray-700'>
               {availableSubCategories.map((subCat) => (
@@ -139,7 +138,7 @@ const Collection = () => {
       </div>
 
       <div className='flex-1'>
-        <div className='flex justify-between text-xl sm:text-2xl mb-4'>
+        <div className='flex justify-between text-xl sm:text-3xl my-6'>
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
           <select onChange={(e)=>setSortType(e.target.value)} className='border-2 border-gray-300 text-base px-2'>
             <option value="relavent">Sort by: Relevant</option>
